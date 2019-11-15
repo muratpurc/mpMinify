@@ -14,7 +14,6 @@ TOC (Table of contents)
 - SCHLUSSBEMERKUNG
 
 
-
 ####################################################################################################
 BESCHREIBUNG
 
@@ -48,12 +47,10 @@ Das Reduzieren der Anzahl der Requests und das Reduzieren der Datenmenge ist sow
 für den Browser als auch für den Server eine übliche Optimierungsmaßnahme.
 
 
-
 ####################################################################################################
 BEKANNTE PROBLEME
 
 Momentan keine
-
 
 
 ####################################################################################################
@@ -63,19 +60,16 @@ CHANGELOG
     * First beta release
 
 
-
 ####################################################################################################
 FEATURES
 
 - Optimierte Ausgabe von JavaScript- oder CSS-Dateien im Frontend
 
 
-
 ####################################################################################################
 VORAUSSETZUNGEN
 
 - Alle Voraussetzungen von CONTENIDO 4.8.x gelten auch für mpMinify
-
 
 
 ####################################################################################################
@@ -88,9 +82,9 @@ Dateien aus dem mpMinify-Package in die entsprechenden CONTENIDO-Verzeichnisse k
 - 'cms' oder den Inhalt davon in das Mandantenverzeichnis kopieren
 
 Die Datei 'cms/min/index.php' öffnen und für den Mandanten anpassen
-- Werte in $min_con_config überschreiben Einstellungen von 'vendor/minify/min/config.php'
-- Werte in $min_con_config_test überschreiben Einstellungen von 'vendor/minify/min/config-test.php'
-- Werte in min_con_groupsConfig überschreiben Einstellungen von 'vendor/minify/min/groupsConfig'
+- Werte in $min_con_config überschreiben Einstellungen von 'lib/minify/min/config.php'
+- Werte in $min_con_config_test überschreiben Einstellungen von 'lib/minify/min/config-test.php'
+- Werte in min_con_groupsConfig überschreiben Einstellungen von 'lib/minify/min/groupsConfig'
 
 Anpassen der URLs zu JavaScript- oder CSS-Dateien im Layout
 
@@ -127,7 +121,7 @@ $min_con_groupsConfig = array(
     ),
 );
 [/code]
-Der Prefix '//cms/' ist für minify und referenziert den Pfad der Datei vom 
+Der Prefix '//cms/' ist für minify und referenziert den Pfad der Datei vom
 Documentroot des Webservers aus.
 
 Beispiel:
@@ -151,7 +145,6 @@ Der erste Aufruf im Frontend kann etwas länger als üblich dauern, da minify di
 Dateien verarbeitet und cached. Danach geht es viel schneller.
 
 
-
 ####################################################################################################
 WICHTIGES ZUM INHALT
 
@@ -160,12 +153,11 @@ cms/min/index.php:
 Die minify Konfiguration für das Frontend des Mandanten.
 
 
-vendor/minify:
---------------
+lib/minify:
+-----------
 Die Sourcen der minify Applikation.
-vendor/minify/README.txt -> Sollte man sich immer durchlesen
-vendor/minify/MIN.txt -> Enthält weitere Anwendungsbeispiele zu minify
-
+lib/minify/README.txt -> Sollte man sich immer durchlesen
+lib/minify/MIN.txt -> Enthält weitere Anwendungsbeispiele zu minify
 
 
 ####################################################################################################
@@ -181,4 +173,4 @@ SCHLUSSBEMERKUNG
 
 Benutzung auf eigene Gefahr!
 
-Murat Purc, murat@purc.de
+Murat Purç, murat@purc.de
