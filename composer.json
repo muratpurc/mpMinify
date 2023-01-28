@@ -1,5 +1,5 @@
 {
-    "name": "purcaholic/mp-minify",
+    "name": "purc/mp-minify",
     "type": "contenido-cms-extension",
     "description": "Minify extension for CONTENIDO CMS",
     "keywords": [
@@ -9,7 +9,7 @@
         "CSS",
         "JavaScript"
     ],
-    "homepage": "http://www.purc.de",
+    "homepage": "https://www.purc.de",
     "authors": [
         {
             "name": "Murat Purç",
